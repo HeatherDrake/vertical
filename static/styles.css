@@ -24,13 +24,13 @@
 
 
 .second-box{
-
     background-color: whitesmoke;
     border: 5px black;
     float:right;
     height:350px;
     width:300px;
-    clear: both
+    clear: both ;
+    transition: 3s;
 
  }
 
@@ -51,7 +51,7 @@ main {
 
 
 }
- .box::after{
+ .position-left::after{
      content: " ";
      height: 0;
      width: 0;
@@ -78,3 +78,22 @@ main {
  div {
      position: relative;
  }
+ .position-left{
+  margin-right:7%;
+  transition: 3s;
+ }
+
+.position-left:hover {
+ /*float: right;*/
+ background-color: red;
+
+}
+
+.position-right:hover {
+ /*float: left;*/
+ background-color: red;
+}
+
+.position-right{
+    transition: 3s;  
+}
