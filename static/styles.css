@@ -10,39 +10,41 @@
 
 }
 
-.first-box{
-    
-
+.left{
     background-color: whitesmoke;
     border: 5px black;
     height:350px;
     width:300px;
-    clear: both
+    clear: both;
+    margin-left 5%;
+    transition:3s;
+
  }
 
 
 
 
-.second-box{
+.right{
     background-color: whitesmoke;
     border: 5px black;
     float:right;
     height:350px;
     width:300px;
-    clear: both ;
+    clear: both;
     transition: 3s;
+
 
  }
 
-.third-box{
+/*#.third-box{*/
 
-    background-color: whitesmoke;
-    border: 5px black;
-    height:350px;
-    width:300px;
-    clear: both
+    /*background-color: whitesmoke;*/
+    /*border: 5px black;*/
+    /*height:350px;*/
+    /*width:300px;*/
+    /*clear: both*/
 
-}
+/*}*/
 
 main {
     max-width: 80%;
@@ -51,7 +53,7 @@ main {
 
 
 }
- .position-left::after{
+ .left::after{
      content: " ";
      height: 0;
      width: 0;
@@ -63,7 +65,7 @@ main {
         right: -5%;
  }
 
- .second-box::after{
+ .right:after{
      content: " ";
      height: 0;
      width: 0;
@@ -78,22 +80,21 @@ main {
  div {
      position: relative;
  }
- .position-left{
-  margin-right:7%;
-  transition: 3s;
- }
 
-.position-left:hover {
+
+
+
+.left:hover {
  /*float: right;*/
  background-color: red;
 
 }
 
-.position-right:hover {
+.right:hover {
  /*float: left;*/
  background-color: red;
 }
 
-.position-right{
-    transition: 3s;  
-}
+/*.right{*/
+    /*transition: 3s;  */
+/*}*/
